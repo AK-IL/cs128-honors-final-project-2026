@@ -2,7 +2,7 @@
 ## Group Name  
 ATA
 
-# Group member names and NetIDs
+## Group member names and NetIDs
 Aekam Singh Pal \- aekam2  
 Thomas Judge \- Tjudge2  
 Aditya Khanna \- akhanna7
