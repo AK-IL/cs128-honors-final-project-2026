@@ -4,7 +4,7 @@ ATA
 
 ## Group member names and NetIDs
 Aekam Singh Pal \- aekam2  
-Thomas Judge \- Tjudge2  
+Thomas Judge \- tjudge2  
 Aditya Khanna \- akhanna7
 
 ## Project Introduction  

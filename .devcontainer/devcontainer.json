@@ -1,0 +1,17 @@
+{
+  "name": "cs128-honors",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
+
+  "customizations": {
+    "vscode":{
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+    }
+  },
+  "runArgs": [
+
+  ],
+  "remoteUser": "vscode",
+  "containerUser": "vscode"
+}
