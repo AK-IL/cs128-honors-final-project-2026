@@ -1,6 +1,6 @@
-// Note: This implementation is heavily based on simple Diffie-Hellman guides
+// Note: This implementation is heavily based on simple Diffie-Hellman guides and a simplified version of the Signal protocl (https://signal.org/docs/)
 
-use rand::rngs::OsRng;
+use rand::{rngs::OsRng, RngCore};
 use x25519_dalek::{StaticSecret, PublicKey};
 use hkdf::Hkdf;
 use sha2::Sha256;
@@ -32,6 +32,12 @@ pub fn public_bytes(public: &PublicKey) -> [u8; 32] {
 // Converts bytes back into a public key
 pub fn public_from_bytes(bytes: [u8; 32]) -> PublicKey {
     PublicKey::from(bytes)
+}
+
+pub fn group_key() -> [u8; 32] {
+    let mut key = [0u8; 32];
+    OsRng.fill_bytes(&mut key);
+    key
 }
 
 // Diffie-Hellman exchange
