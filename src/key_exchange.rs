@@ -21,6 +21,14 @@ pub fn gen_keys() -> KeyPair {
     KeyPair { secret, public }
 }
 
+pub fn public_bytes(public: &PublicKey) -> [u8; 32] {
+    public.to_bytes()
+}
+
+pub fn public_from_bytes(bytes: [u8; 32]) -> PublicKey {
+    PublicKey::from(bytes)
+}
+
 pub fn get_shared_key(private: &StaticSecret, ext_public: &PublicKey) -> [u8; 32] {
     let shared = private.diffie_hellman(ext_public);
     let key_deriver = Hkdf::<Sha256>::new(None, shared.as_bytes());
