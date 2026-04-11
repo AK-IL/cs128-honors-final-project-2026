@@ -1,4 +1,4 @@
-use ata_messenger::crypto;
+use ata_messenger::key_exchange;
 
 #[tokio::main]
 async fn main() {

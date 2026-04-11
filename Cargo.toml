@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-x25519-dalek = { version = "2.0.1", features = ["static_secrets"] }
+x25519-dalek = { version = "2.0.1", features = ["static_secrets", "zeroize"] }
 hkdf = "0.13.0"
 sha2 = "0.11.0"
 aes-gcm = "0.10.3"
