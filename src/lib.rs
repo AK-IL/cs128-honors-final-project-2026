@@ -1,6 +1,7 @@
 pub mod key_exchange;
 pub mod crypto;
 pub mod network_interface;
+pub mod relay;
 
 use serde::{Serialize, Deserialize};
 use std::time::{SystemTime, UNIX_EPOCH};
