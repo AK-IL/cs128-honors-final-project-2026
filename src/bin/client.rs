@@ -1,3 +1,5 @@
+// Please keep my girl client.rs clean, please do not implement functions here
+
 use ata_messenger::network_interface::NetworkInterface;
 use ata_messenger::{Packet, Navigation, Data};
 

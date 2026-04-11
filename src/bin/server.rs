@@ -1,3 +1,5 @@
+// Please keep my boy server.rs clean, do not implement functions here
+
 use ata_messenger::relay::Relay;
 
 #[tokio::main]
